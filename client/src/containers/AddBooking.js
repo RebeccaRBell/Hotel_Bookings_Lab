@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import { postBooking } from '../BookingService';
 
-const AddBooking = ({postBooking, addBooking}) => {
+const AddBooking = ({addBooking}) => {
 
 const [formData, setFormData] = useState({
   name: "",
